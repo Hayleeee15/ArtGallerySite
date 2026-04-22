@@ -1,0 +1,20 @@
+:root {
+    /* Colors */
+    --header-color-one: #FFFFFF;        /* White */
+    --header-color-two: #151515;        /* Grey 900 */
+
+    --p-first-color: #444;              /* Grey 700 */
+    --p-second-color: #FFFFFF;          /* White */
+
+    --button-font-color: #FFFFFF;       /* White */
+    --button-bg-one: #151515;           /* Grey 900 */
+    --button-bg-two: #D5966C;           /* Gold 500 */
+
+    --index-main-bg-color: #FFFFFF;     /* White */
+    --index-nav-bg-color: #151515;      /* Grey 900 */
+
+    --location-h2-color: #D5966C;       /* Gold 500 */
+    --location-main-bg-color: #151515;  /* Grey 900 */
+    --location-nav-bg-color: #D5966C;   /* Gold 500 */
+
+}
