@@ -9,9 +9,17 @@ Built to be responsive depending on device size.
 
 ### Built With
 
+🔴 Mobile First
+
+🔴 Google Fonts
+
+🔴 Figma File
+
 🔴 Semantic HTML
 
 🔴 CSS Custom Properties
+
+
 
 
 ### Preview
