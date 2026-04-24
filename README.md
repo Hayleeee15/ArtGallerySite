@@ -19,7 +19,7 @@ Built to be responsive depending on device size.
 
 🔴 CSS Custom Properties
 
-
+🔴 Flex
 
 
 ### Preview
@@ -46,6 +46,14 @@ Built to be responsive depending on device size.
 </div>
 
 ## Update Progress
+
+### April 23rd, 2026
+
+Initalized CSS Reset
+
+Created button to navigate between pages
+
+Positioned button ontop of the photo (not a background photo)
 
 ### April 22nd, 2026
 
