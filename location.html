@@ -6,20 +6,24 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@300;800;900&display=swap" rel="stylesheet">
+    
   <title>Frontend Mentor | Art gallery website</title>
 </head>
 <body>
   <header>
-    <a href="index.html">Back to Home</a>
+    <a href="index.html" class="location__btn btn"><img src="./assets/icon-arrow-left.svg" alt="" class="btn--arrow"><div class="btn--text">Back To Home</div></a>
+    <img src="./assets/mobile/image-map.png" alt="Location of Art Gallery" class="loc-header__img">
   </header>
 
   <main>
     <h1>Our location</h1>
     <h2>99 King Street</h2>
     <p>
-      Newport
-      RI 02840
+      Newport <br>
+      RI 02840 <br>
       United States of America
     </p>
 
@@ -29,11 +33,13 @@
       a week from 8am to 9pm.
     </p>
   </main>
-  <nav>
-    <h3>Modern Art Gallery</h3>
+  <footer>
+    <nav>
+      <h3>Modern Art Gallery</h3>
 
-    <p>The Modern Art Gallery is free to all visitors and open seven days a week 
-    from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
-  </nav>
+      <p>The Modern Art Gallery is free to all visitors and open seven days a week 
+      from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+    </nav>
+  </footer>
 </body>
 </html>

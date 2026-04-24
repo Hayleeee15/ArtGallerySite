@@ -17,4 +17,121 @@
     --location-main-bg-color: #151515;  /* Grey 900 */
     --location-nav-bg-color: #D5966C;   /* Gold 500 */
 
+    /* Typography */
+    --ff: "Big Shoulders Display" ; /*fix this */
+    --fw: 300; /* Light */
+    --fs: 1.125rem;
+    --lh: 140%;
+
+    --heading-lh: 90%;
+    --heading-fw: 900; /* Black */
+
+    --index-h1-fs: 3.75rem;
+    --index-h2-fs: 3.125rem;
+
+    --location-h1-fs: 3.4375rem;
+    --location-h2-fs: 2.25rem;
+    --location-h2-lh: 100%;
+    
+    --nav-fs: 1.25rem;
 }
+
+/* #region Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+/* #endregion */
+
+/* #region Global */
+body {
+    font-family: var(--ff);
+    font-size: var(--fs);
+    font-weight: var(--fw);
+    line-height: var(--lh);
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    width: 70%;
+
+    text-decoration: none;
+    color: var(--button-font-color);
+    background-color: var(--button-bg-one);   
+}
+
+.btn--arrow{
+    background-color: var(--button-bg-two);
+    padding: 1.5rem;
+}
+
+.btn--text {
+    flex: 1;
+    text-align: center;
+}
+/* #endregion */
+
+/* #region Location Header */
+header {
+    position: relative;
+}
+
+.location__btn {
+    position: absolute;
+    top: .6rem;
+    left: .6rem;
+}
+/* #endregion */
+
+/* #region Location Main */
+main{
+    background-color: var(--location-main-bg-color);
+    color: var(--header-color-one);
+
+    padding: 5rem 1rem 3.75rem 1rem;
+}
+
+main h1{
+    text-transform: uppercase;
+    font-size: var(--location-h1-fs);
+    font-weight: var(--heading-fw);
+    line-height: var(--heading-lh);
+
+    padding-bottom: 3rem;
+}
+
+main h2 {
+    color: var(--location-h2-color);
+    font-size: var(--location-h2-fs);
+    line-height: var(--location-h2-lh);
+
+    padding-bottom: 1.25rem;
+}
+
+main p {
+    padding-bottom: 1.25rem;
+}
+/* #endregion */
+
+/* #region Footer */
+footer {
+    background-color: var(--button-bg-two);
+}
+/* #endregion */
