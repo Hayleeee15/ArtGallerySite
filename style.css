@@ -11,20 +11,26 @@
     --button-bg-two: #D5966C;           /* Gold 500 */
 
     --index-main-bg-color: #FFFFFF;     /* White */
-    --index-nav-bg-color: #151515;      /* Grey 900 */
+    --index-footer-bg-color: #151515;      /* Grey 900 */
 
     --location-h2-color: #D5966C;       /* Gold 500 */
     --location-main-bg-color: #151515;  /* Grey 900 */
-    --location-nav-bg-color: #D5966C;   /* Gold 500 */
+    --location-footer-bg-color: #D5966C;   /* Gold 500 */
 
     /* Typography */
-    --ff: "Big Shoulders Display" ; /*fix this */
-    --fw: 300; /* Light */
+    --ff: "Big Shoulders", sans-serif;
+    --fw: 300;          /* Light */
     --fs: 1.125rem;
     --lh: 140%;
+    --p-ff: "outfit", sans-serif;
+
+    --btn-fs: 1.25rem;
+    --btn-ls: 0.2275rem;
+    --btn-lh: 100%;
+    --btn-fw: 800;      /* Extra Bold */
 
     --heading-lh: 90%;
-    --heading-fw: 900; /* Black */
+    --heading-fw: 900;  /* Black */
 
     --index-h1-fs: 3.75rem;
     --index-h2-fs: 3.125rem;
@@ -32,8 +38,8 @@
     --location-h1-fs: 3.4375rem;
     --location-h2-fs: 2.25rem;
     --location-h2-lh: 100%;
-    
-    --nav-fs: 1.25rem;
+
+    --h3-fs: 1.5rem;
 }
 
 /* #region Reset */
@@ -67,6 +73,14 @@ body {
     line-height: var(--lh);
 }
 
+body p {
+    font-family: var(--p-ff);
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
 .btn{
     display: flex;
     align-items: center;
@@ -85,15 +99,30 @@ body {
 .btn--text {
     flex: 1;
     text-align: center;
+    font-size: var(--btn-fs);
+    font-weight: var(--btn-fw);
+    line-height: var(--btn-lh);
+    letter-spacing: var(--btn-ls);
+    text-transform: uppercase;
+}
+
+.social__links {
+    display: flex;
+    gap: 1.25rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 /* #endregion */
 
 /* #region Location Header */
-header {
+.page-location header {
     position: relative;
 }
 
-.location__btn {
+.page-location .btn {
     position: absolute;
     top: .6rem;
     left: .6rem;
@@ -101,15 +130,14 @@ header {
 /* #endregion */
 
 /* #region Location Main */
-main{
+.page-location main{
     background-color: var(--location-main-bg-color);
     color: var(--header-color-one);
 
     padding: 5rem 1rem 3.75rem 1rem;
 }
 
-main h1{
-    text-transform: uppercase;
+.page-location main h1{
     font-size: var(--location-h1-fs);
     font-weight: var(--heading-fw);
     line-height: var(--heading-lh);
@@ -117,7 +145,7 @@ main h1{
     padding-bottom: 3rem;
 }
 
-main h2 {
+.page-location main h2 {
     color: var(--location-h2-color);
     font-size: var(--location-h2-fs);
     line-height: var(--location-h2-lh);
@@ -125,13 +153,29 @@ main h2 {
     padding-bottom: 1.25rem;
 }
 
-main p {
+.page-location main p {
     padding-bottom: 1.25rem;
 }
 /* #endregion */
 
-/* #region Footer */
+/* #region Location Footer */
+.page-location footer {
+    background-color: var(--location-footer-bg-color);
+}
+
 footer {
-    background-color: var(--button-bg-two);
+    padding: 3rem 1rem;
+}
+
+footer img {
+    padding-bottom: 2.5rem;
+}
+
+footer p{
+    padding-bottom: 2.5rem;
+}
+
+.page-location footer svg {
+    fill: var(--button-bg-one);
 }
 /* #endregion */
