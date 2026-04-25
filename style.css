@@ -1,7 +1,7 @@
 :root {
     /* Colors */
-    --header-color-one: #FFFFFF;        /* White */
-    --header-color-two: #151515;        /* Grey 900 */
+    --header-color-one: #151515;        /* White */
+    --header-color-two: #FFFFFF;        /* Grey 900 */
 
     --p-first-color: #444;              /* Grey 700 */
     --p-second-color: #FFFFFF;          /* White */
@@ -74,11 +74,13 @@ body {
 }
 
 body p {
-    font-family: var(--p-ff);
+    font-family: var(--p-ff); 
 }
 
 h1, h2, h3 {
     text-transform: uppercase;
+    line-height: var(--heading-lh);
+    font-weight: var(--heading-fw);
 }
 
 .btn{
@@ -117,6 +119,30 @@ ul {
 }
 /* #endregion */
 
+/* #region Home Header */
+.page-home header{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6rem;
+}
+
+.page-home h1 {
+    font-size: var(--index-h1-fs);
+    color: var(--header-color-one);
+    padding: 2rem 1rem;
+}
+
+.page-home header p{
+    color: var(--p-first-color);
+    padding: 0 1rem 2rem 1rem;
+}
+
+.page-home .btn {
+    margin-left: 1rem;
+}
+
+/* #endregion */
+
 /* #region Location Header */
 .page-location header {
     position: relative;
@@ -133,19 +159,49 @@ header .loc-header__img {
 }
 /* #endregion */
 
+/* #region Home Main */
+.page-home main {
+    padding: 0 1rem 6rem 1rem;
+}
+
+.header--one {
+    color: var(--header-color-one);
+    padding: 1.5rem 0;
+}
+
+.page-home h2{
+    font-size: var(--index-h2-fs);
+    padding-bottom: 1.5rem;
+}
+
+.page-home main .break {
+    display: block;
+}
+
+.header--two{
+    background-color: var(--index-footer-bg-color);
+    color: var(--header-color-two);
+}
+
+.header--two h2{
+    padding: 3rem 1.5rem 1.5rem 1.5rem;
+}
+
+.header--two p{
+    padding: 0 1.5rem 3rem 1.5rem;
+}
+/* #endregion */
+
 /* #region Location Main */
 .page-location main{
     background-color: var(--location-main-bg-color);
-    color: var(--header-color-one);
+    color: var(--header-color-two);
 
     padding: 5rem 1rem 3.75rem 1rem;
 }
 
 .page-location main h1{
     font-size: var(--location-h1-fs);
-    font-weight: var(--heading-fw);
-    line-height: var(--heading-lh);
-
     padding-bottom: 3rem;
 }
 
@@ -162,12 +218,22 @@ header .loc-header__img {
 }
 /* #endregion */
 
+/* #region Home Footer */
+.page-home footer {
+    background-color: var(--index-footer-bg-color);
+    color: var(--index-main-bg-color);
+
+    padding: 3rem 2.5rem;
+}
+
+.page-home footer svg {
+    fill: var(--index-main-bg-color);
+}
+/* #endregion */
+
 /* #region Location Footer */
 .page-location footer {
     background-color: var(--location-footer-bg-color);
-}
-
-footer {
     padding: 3rem 1rem;
 }
 
