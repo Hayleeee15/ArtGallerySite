@@ -122,6 +122,10 @@ ul {
     position: relative;
 }
 
+header .loc-header__img {
+    width: 100%;
+}
+
 .page-location .btn {
     position: absolute;
     top: .6rem;
@@ -179,3 +183,46 @@ footer p{
     fill: var(--button-bg-one);
 }
 /* #endregion */
+
+/* Media Queries */
+@media (min-width: 48rem) {
+/* #region Global */
+    .btn{
+        display: flex;
+        align-items: center;
+        width: 40%;
+    }
+/* #endregion */
+
+/* #region Location Main */
+    .page-location main{
+        display: flex;
+        padding: 5rem 2.5rem 3.75rem 2.5rem;
+    }
+
+    .page-location main h1{
+        padding-right: 4.2rem;
+    }
+/* #endregion */
+
+/* #region Location Footer */
+    footer {
+        display: flex;
+        align-items:flex-start;
+        justify-content: space-between;
+        width: 100%;
+        padding: 3rem 2.5rem;
+    }
+
+    footer img {
+        padding-bottom: 0;
+    }
+
+    footer p{
+        text-align: left;
+        width: 18rem;
+        padding: 0;
+    }
+/* #endregion */
+
+}
