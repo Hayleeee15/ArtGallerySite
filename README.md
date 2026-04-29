@@ -21,6 +21,8 @@ Built to be responsive depending on device size.
 
 🔴 Flex
 
+🔴 Grid
+
 
 ### Preview
 
@@ -46,6 +48,14 @@ Built to be responsive depending on device size.
 </div>
 
 ## Update Progress
+
+### April 29rd, 2026
+
+Completed the Home Page Tablet Display
+
+The top of main uses flex while this display below uses grid (Home Tablet) 
+
+Used position in the header so the text and button lay ontop of the img (Home Tablet) 
 
 ### April 23rd, 2026
 
