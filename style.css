@@ -33,6 +33,7 @@
     --heading-fw: 900;  /* Black */
 
     --index-h1-fs: 3.75rem;
+    --index-h1-tablet-fs: 4.375rem;
     --index-h2-fs: 3.125rem;
 
     --location-h1-fs: 3.4375rem;
@@ -166,16 +167,28 @@ header .loc-header__img {
 
 .header--one {
     color: var(--header-color-one);
-    padding: 1.5rem 0;
+    padding:0;
 }
 
 .page-home h2{
     font-size: var(--index-h2-fs);
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.page-home .header--one p{
     padding-bottom: 1.5rem;
 }
 
 .page-home main .break {
     display: block;
+}
+
+.grid-img-one{
+    padding-bottom: 1.25rem;
+}
+
+.grid-img-two{
+    padding-bottom: 1.25rem;
 }
 
 .header--two{
@@ -257,6 +270,105 @@ footer p{
         display: flex;
         align-items: center;
         width: 18rem;
+    }
+/* #endregion */
+
+/* #region Home Header */
+    .page-home header{
+        position: relative;
+        padding-bottom: 7.5rem;
+    }
+
+    .home-header__img{
+        width: 56%;
+    }
+
+    .page-home h1 {
+        font-size: var(--index-h1-tablet-fs);
+    }
+
+    .tablet__header {       
+        position: absolute;
+        top: 9.5rem;
+        right:  2.5rem;
+        width: 24rem;
+    }
+
+/* #endregion */
+
+/* #region Home Main */
+    .page-home main {
+        padding: 0 2.5rem 8rem 2.5rem;
+    }
+
+    .header--one {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: .75rem;
+    }
+
+    .header--one__text {
+        flex: 1;
+    }
+
+    .page-home h2{
+        font-size: var(--index-h2-fs);
+        padding: 0 0 2rem 0;
+    }
+
+    .page-home .header--one p{
+        padding-bottom: 0;
+    }
+
+    .page-home main .break {
+        display: block;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr;
+        gap: .75rem;
+
+        width: 100%;
+    }
+
+    .grid-img-one,
+    .grid-img-two {
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-img-one img,
+    .grid-img-two img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .grid-img-one {
+        grid-area: 1 / 1 / 3 / 2;
+        padding: 0;
+    }
+
+    .grid-img-two {
+        grid-area: 1 / 2 / 2 / 3;
+        padding: 0;
+    }
+
+    .header--two{
+        grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .header--two h2{
+        padding: 4.75rem 1.75rem 1.5rem 1.75rem;
+    }
+
+    .header--two p{
+        padding: 0 1.75rem 4.75rem 1.75rem;
     }
 /* #endregion */
 
