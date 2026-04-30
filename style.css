@@ -23,6 +23,7 @@
     --fs: 1.125rem;
     --lh: 140%;
     --p-ff: "outfit", sans-serif;
+    --p-desktop-fs: 1.375;
 
     --btn-fs: 1.25rem;
     --btn-ls: 0.2275rem;
@@ -34,7 +35,10 @@
 
     --index-h1-fs: 3.75rem;
     --index-h1-tablet-fs: 4.375rem;
+    --index-h1-desktop-fs: 6rem;
     --index-h2-fs: 3.125rem;
+    --index-h2-desktop-fs: 3.75rem;
+    --index-h2-desktop-lh: 100%;
 
     --location-h1-fs: 3.4375rem;
     --location-h2-fs: 2.25rem;
@@ -383,7 +387,7 @@ footer p{
     }
 /* #endregion */
 
-/* #region Location Footer */
+/* #region Footer */
     footer {
         display: flex;
         align-items:flex-start;
@@ -403,12 +407,100 @@ footer p{
     }
 /* #endregion */
 }
+
 @media (min-width: 64rem) {
+/* #region General */
+    body {
+        font-size: var(--p-desktop-fs);
+    }
+/* #endregion */
+
+/* #region Home Header */
+    .page-home header{
+        position: relative;
+        padding-bottom: 0;
+        
+        background: linear-gradient(to right, var(--button-bg-one) 50%, var(--index-main-bg-color) 50%);
+    }
+
+    .home-header__img{
+        width: 40%;
+        margin: auto;
+    }
+    
+    .tablet__header h1 {
+        font-size: var(--index-h1-desktop-fs);
+        width: 60%;
+
+        mix-blend-mode: difference;
+        color: var(--header-color-two);
+    }
+
+    .header__content {
+        margin-left: auto; 
+        width: 30%;
+    }
+
+    .tablet__header {       
+        display: flex;
+        top: 11.5rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 80vw;
+    }
+
+/* #endregion */
+
 /* #region Location Header */
     .page-location .btn {
         position: absolute;
         top: 1rem;
         left: 7rem;
+    }
+/* #endregion */
+
+/* #region Home Main */
+    .page-home main {
+        padding: 11rem 10rem 11rem 10rem;
+    }
+
+    .header--one {
+        gap: 5;
+        padding-bottom: 2rem;
+    }
+
+    .header--one__text {
+        flex: 1;
+    }
+
+    .page-home main .break {
+        display: inline;
+    }
+
+    .page-home h2{
+        font-size: var(--index-h2-desktop-fs);
+        line-height: var(--index-h2-desktop-lh);
+        padding: 0 0 2rem 0;
+        width: 20rem;
+    }
+
+    .header--one__text p {
+        width: 20rem;
+    }
+
+    .main-grid {
+        gap: 2rem;
+    }
+
+    .header--two h2{
+        width: 22rem;
+        padding: 4.125rem 3rem 2rem 3rem;
+    }
+
+    .header--two p{
+        padding: 0 3rem 4.125rem 3rem;
+        width: 25rem;
     }
 /* #endregion */
 
@@ -432,20 +524,5 @@ footer p{
     }
 /* #endregion */
 
-/* #region Location Footer */
-    footer {
-        padding: 5rem 10rem;
-    }
-
-    footer img {
-        padding-bottom: 0;
-    }
-
-    footer p{
-        text-align: left;
-        width: 21rem;
-        padding: 0;
-    }
-/* #endregion */
 } 
 /* #endregion */
