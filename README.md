@@ -49,6 +49,12 @@ Built to be responsive depending on device size.
 
 ## Update Progress
 
+### April 30th, 2026
+
+Completed Home Page Desktop Display
+
+Minor adjustments to padding
+
 ### April 29rd, 2026
 
 Completed the Home Page Tablet Display
