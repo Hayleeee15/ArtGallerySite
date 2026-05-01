@@ -1,7 +1,7 @@
 :root {
     /* Colors */
-    --header-color-one: #151515;        /* White */
-    --header-color-two: #FFFFFF;        /* Grey 900 */
+    --header-color-one: #151515;        /* Grey 900 */
+    --header-color-two: #FFFFFF;        /* White */
 
     --p-first-color: #444;              /* Grey 700 */
     --p-second-color: #FFFFFF;          /* White */
@@ -23,7 +23,7 @@
     --fs: 1.125rem;
     --lh: 140%;
     --p-ff: "outfit", sans-serif;
-    --p-desktop-fs: 1.375;
+    --p-desktop-fs: 1.375rem;
 
     --btn-fs: 1.25rem;
     --btn-ls: 0.2275rem;
@@ -254,11 +254,13 @@ header .loc-header__img {
     padding: 3rem 1rem;
 }
 
-footer img {
+.page-location footer img,
+.page-home footer img {
     padding-bottom: 2.5rem;
 }
 
-footer p{
+.page-location footer p,
+.page-home footer p {
     padding-bottom: 2.5rem;
 }
 
@@ -388,7 +390,9 @@ footer p{
 /* #endregion */
 
 /* #region Footer */
-    footer {
+    
+    .page-location footer,
+    .page-home footer {
         display: flex;
         align-items:flex-start;
         justify-content: space-between;
@@ -396,11 +400,15 @@ footer p{
         padding: 3rem 2.5rem;
     }
 
-    footer img {
+
+    .page-location footer img,
+    .page-home footer img {
         padding-bottom: 0;
     }
 
-    footer p{
+
+    .page-location footer p,
+    .page-home footer p {
         text-align: left;
         width: 18rem;
         padding: 0;
